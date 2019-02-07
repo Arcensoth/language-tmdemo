@@ -1,0 +1,32 @@
+{
+  "name": "language-tmdemo",
+  "displayName": "language-tmdemo",
+  "description": "TextMate demo grammar for visualizing root groups in different colour themes.",
+  "version": "0.0.1",
+  "repository": "https://github.com/Arcensoth/language-tmdemo",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "tmdemo",
+        "aliases": [
+          "tmdemo"
+        ],
+        "extensions": [
+          "tmdemo"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "tmdemo",
+        "scopeName": "source.tmdemo",
+        "path": "./tmdemo.tmLanguage.json"
+      }
+    ]
+  }
+}
